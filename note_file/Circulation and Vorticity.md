@@ -95,3 +95,27 @@ By this definition, absolute vorticity ($\eta$), planetary vorticity (f) can als
 Especially planetary vorticity, its value will the same as Coriolis constant.
 Relation between these vorticity like below:
 $$\eta = f+\zeta$$
+
+### Vorticity in nature coordinate
+Considering a little section of curve isobaric line, with angle $\delta \beta\rightarrow 0$, curvature radius $R_s$.
+Consider a circulation is formed between the two lines.
+By the definition of circulation:
+$$C = \oint_L \vec{v}\cdot d\vec{l}$$
+
+$$= v\cdot(\delta s+d(\delta s))-(v+\delta v)\cdot \delta s$$
+
+$$=v\cdot (\delta s+\delta \beta\;\delta n)-(v+\frac{\partial v}{\partial n}\delta n)\cdot \delta s$$
+
+$$=v\;\delta n\;\delta \beta-\frac{\partial v}{\partial n}\delta n\cdot \delta s$$
+
+$$=\delta n\; \delta s\;(-\frac{\partial v}{\partial n}+\frac{v}{R_s})$$
+
+By the definition of vorticity:
+$$\zeta \equiv \lim_{A\rightarrow 0} \frac{C}{A}$$
+
+$$=\lim_{\delta n, \delta s\rightarrow 0} \delta n\; \delta s\;(-\frac{\partial v}{\partial n}+\frac{v}{R_s})/(\delta n\; \delta s)$$
+
+$$=-\frac{\partial v}{\partial n}+\frac{v}{R_s}$$
+
+This is the vorticity in nature coordinate.
+The $-\frac{\partial v}{\partial n}$ is 
