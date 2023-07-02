@@ -118,4 +118,66 @@ $$=\lim_{\delta n, \delta s\rightarrow 0} \delta n\; \delta s\;(-\frac{\partial 
 $$=-\frac{\partial v}{\partial n}+\frac{v}{R_s}$$
 
 This is the vorticity in nature coordinate.
-The $-\frac{\partial v}{\partial n}$ is 
+The $-\frac{\partial v}{\partial n}$ is shear vorticity, $\frac{v}{R_s}$ is curvature vorticity.
+
+## Potential Vorticity
+### Purpose 
+By Kelvin Circulation Theorem, in barotropic atmosphere, absolute vorticity is a conservative quantity. 
+In order to define a quantity that is conservative in baroclinic atmosphere, potential vorticity is thus developed.
+
+### Definition
+$$PV = -g\frac{\delta \theta}{\delta p}(\zeta_\theta+f)$$
+
+<font color = #00f>
+
+<pf.>
+By the definition of potential temperature:
+$$\theta = T(\frac{p_0}{p})^{\frac{R_d}{C_p}}$$
+
+By ideal gas law:
+$$\Rightarrow \theta = \frac{p}{\rho R_d}(\frac{p_0}{p})^{\frac{R_d}{C_p}}$$
+
+$$\Rightarrow \rho = p^{\frac{C_v}{C_p}}(R\theta)^{-1}p_0^{\frac{R_d}{C_p}}$$
+
+if the parcel flow along isentropic surface, $\rho$ will only depends on pressure (like barotropic).
+Also, by this property, using Kelvin Circulation Theorem:
+$$\frac{DC_a}{Dt} = \frac{D}{Dt}(C_\theta+2\Omega sin\phi\; \delta A) = 0$$
+
+$$\Rightarrow (\zeta_\theta+f)\delta A = const.$$
+
+Consider the definition of pressure:
+$$-\delta p = \frac{g\delta M}{\delta A}$$
+
+$$\Rightarrow \frac{\delta M}{\delta \theta} = const.$$
+
+By using this two equations:
+$$(\zeta_\theta+f)\delta A = const.$$
+
+$$\Rightarrow -(\zeta_\theta+f)\frac{g}{\delta p}\delta M = const.$$
+
+$$\Rightarrow -g\frac{\delta \theta}{\delta p}\frac{\delta M}{\delta \theta}(\zeta_\theta+f) = const.$$
+
+Since $\frac{\delta M}{\delta \theta} = const.$:
+$$-g\frac{\delta \theta}{\delta p}(\zeta_\theta+f) = const. = PV$$
+
+in which $\frac{\delta p}{\delta \theta}$ is quantity of effective depth.
+</font>
+
+### Rossby potential vorticity conservation law
+By the definition of vorticity, term $\frac{\delta \theta }{\delta p}$ can be regarded as depth of atmosphere.
+Transferring into altitude coordinate, it can be written in:
+$$\frac{\zeta_\theta+f}{h} = const.$$
+
+This equation is also called **Rossby potential vorticity conservation law**.
+
+Considering conditions below:
+#### No terrain
+Generally, if there is no terrain effect, $h$ can be approximated as a constant.
+Now, firstly consider easterly wind. 
+If the flow turn counter-clockwise, $\zeta_\theta >0$. Also, $f$ increase, the total amount is increasing, not conservative.
+If the flow turn clockwise, $\zeta_\theta <0$, and $f$ decrease, then the total is decreasing, not conservative.
+
+Next, considering the westerly wind, if the parcel flow clockwise, $\zeta_\theta <0$, $f increasing$, the total is 0, conservative.
+If the wind flow counter-clockwise, $\zeta_\theta >0$, $f$ is decreasing, conservative.
+
+#### 
